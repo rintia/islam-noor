@@ -1,10 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const listOptions = <>
-    <li><a>Item 1</a></li>
-    <li><a>Item 3</a></li>
-    <li><a>Item 3</a></li>
+    <li><NavLink to='/'>Home</NavLink></li>
+    <li><NavLink to='/sadaqa'>Sadaqa</NavLink></li>
+    <li><NavLink to='/courses'>Courses</NavLink></li>
+    <li><NavLink to='/zakat'>Zakat</NavLink></li>
+    
     </>
     return (
         <>
@@ -26,7 +29,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn">Sign Up</a>
   </div>
 </div>
         </>
